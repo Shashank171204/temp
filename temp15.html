@@ -9,20 +9,46 @@
         let username=""
         let useremail=""
         let currbalance=0
+        function func6(){
+            let amt=document.getElementById("amt").value;
+            let type=document.getElementById("type").value;
+            for(let i=0;i<users.length;i++){
+                if(users[i].email==useremail){
+                    if(type==1){
+                        currbalance+=parseInt(amt);
+                        document.getElementById("balance").innerHTML="Balance: "+currbalance;
+                    }
+                    else if(type==2){
+                        if(parseInt(amt)<=currbalance){
+                            currbalance-=parseInt(amt);
+                            document.getElementById("balance").innerHTML="Balance: "+currbalance;
+                        }
+                        else{
+                            document.getElementById("balance").innerHTML="Insufficient Balance";
+                        }
+                    }
+                    else if(type==3){
+                        let balance=document.getElementById("").value;
+                        document.getElementById("balance").innerHTML="Transfered succesfully";
+                    }
+                }
+            }
+        }
         function func5(){
             let str = `
             <h2>Welcome ${username}!!</h2>
             <button onclick='func()'>Logout</button>
-            <p><input type="number" placeholder="Enter Amount"></p>
+            <p><input type="number" placeholder="Enter Amount" id="amt"></p>
             <p>
                 <select id="type">
                     <option value=0>--Select--</option>
                     <option value=1>Deposit</option>
                     <option value=2>Withdraw</option>
+                    <option value=3>Transfer</option>
                 </select>
             </p>
-            <p><button>Submit</button></p>
-            <p>Current Balance: ${currbalance}</p>
+            <p><button onclick="func6()">Submit</button></p>
+            <p id="balance">Balance: ${currbalance}</p>
             `;
             root.innerHTML = str;
         }
