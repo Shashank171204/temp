@@ -1,0 +1,123 @@
+.box {
+    /* background-color: teal; */
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    background:cornsilk;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+.box:hover {
+    transform: scale(1.2, 1.2);
+}
+.box1{
+    text-align: left;
+}
+.box2 {
+    /* background-color: teal; */
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    background:lightyellow;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+.box2:hover {
+    transform: scale(1.2, 1.2);
+}
+.container{
+    height: 100%;
+}
+.row {
+    background-color:orange;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.row1 {
+    background-color:lightgreen;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#contact{
+    background-color: yellow;
+}
+#e{
+    background-color:blue;
+    display: flex;
+    justify-content:center;
+}
+#f{
+    padding-left: 3%;
+    padding-top: 1%;
+}
+#g{
+    background-color:salmon;
+    font-size:xx-large;
+    src: url();
+    font-weight: lighter;
+    justify-content: center;
+}
+#h{
+    background-color:salmon;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#home{
+    background:linear-gradient(lightgreen,darkblue,lightblue);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width:90%;
+    height: 50%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+#h a{
+    text-decoration: none;
+}
+#i{
+    padding-right: 40%;
+}
+#j{
+    padding-left: 3%;
+    padding-top: 1%;
+}
+#k{
+    padding-left: 3%;
+    padding-top: 1%;
+}
+#p2{
+    background-color:orange;
+}
+#p3{
+    background-color:lightgreen;
+}
+footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+button{
+    background-color: blue;
+    border-width: 1px solid;
+    border-color: black;
+    color: aliceblue;
+}
+li{
+    display: inline-block;
+    padding: 5px;
+    font-size: larger;
+}
+*{
+    margin: 0px;
+}
