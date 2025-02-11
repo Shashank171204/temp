@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&display=swap');
 .box {
     /* background-color: teal; */
     margin: 20px;
@@ -57,9 +58,13 @@
     padding-top: 1%;
 }
 #g{
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-style: normal;
     background-color:salmon;
     font-size:xx-large;
-    src: url();
+    font-weight: bold;
     font-weight: lighter;
     justify-content: center;
 }
